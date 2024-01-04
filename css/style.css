@@ -8,14 +8,26 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 body {
   font-family: 'Mulish', system-ui, sans-serif;
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   max-width: 1280px;
   margin: auto;
-  padding: 65px 32px 32px;
+  padding: 65px 32px 0px;
+  background: linear-gradient(
+    180deg,
+    rgba(227, 255, 248, 0) 82.08%,
+    rgba(227, 255, 248, 0.38) 100%
+  );
+  min-height: 100vh;
 }
 
 nav {
@@ -43,6 +55,7 @@ nav {
 
 main {
   display: flex;
+  flex: 1;
   justify-content: space-between;
   align-items: center;
 }
